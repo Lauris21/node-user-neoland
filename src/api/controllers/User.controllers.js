@@ -163,7 +163,7 @@ const registerWithRedirect = async (req, res, next) => {
         if (userSave) {
           return res.redirect(
             307,
-            `http://localhost:8081/api/v1/user/register/sendMail/${userSave._id}`
+            `https://node-user-neoland.onrender.com/api/v1/user/register/sendMail/${userSave._id}`
           );
         } else {
           // Error no se ha guardado correcto
@@ -480,7 +480,7 @@ const forgotPassword = async (req, res, next) => {
       //! redirect -- 307
       return res.redirect(
         307,
-        `http://localhost:${process.env.PORT}/api/v1/user/forgot/sendPassword/${userDB._id}`
+        `https://node-user-neoland.onrender.com/api/v1/user/forgot/sendPassword/${userDB._id}`
       );
     } else {
       // User no encontrado
