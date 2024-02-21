@@ -8,7 +8,7 @@ const User = require("../models/User.model");
 
 const { deleteImgCloudinary } = require("../../middleware/file.middleware");
 const { generateToken } = require("../../utils/token");
-const randomPassword = require("../../utils/randomPAssword");
+const randomPassword = require("../../utils/randomPassword");
 const randomCode = require("../../utils/randomCode");
 const enumOk = require("../../utils/enumOk");
 const Comment = require("../models/Comment.model");
